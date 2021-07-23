@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Miawouf" translatesAutoresizingMaskIntoConstraints="NO" id="UYD-lp-l1Z">
+                                <rect key="frame" x="89.5" y="414.5" width="235" height="67"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="i7X-9y-fVW">
+                                <rect key="frame" x="184" y="364" width="46" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="70r-yj-8vp"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Cat" translatesAutoresizingMaskIntoConstraints="NO" id="U5v-88-jUO">
+                                <rect key="frame" x="184" y="489" width="46" height="42"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.82894331219999995" green="0.93595826630000001" blue="0.99216729400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="U5v-88-jUO" firstAttribute="leading" secondItem="i7X-9y-fVW" secondAttribute="leading" id="0HA-IF-xg9"/>
+                            <constraint firstItem="i7X-9y-fVW" firstAttribute="centerX" secondItem="UYD-lp-l1Z" secondAttribute="centerX" id="7SQ-af-ias"/>
+                            <constraint firstItem="UYD-lp-l1Z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BuX-6o-3KZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U5v-88-jUO" secondAttribute="bottom" constant="331" id="D67-CN-tkO"/>
+                            <constraint firstItem="UYD-lp-l1Z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MA6-pd-iXN"/>
+                            <constraint firstItem="U5v-88-jUO" firstAttribute="centerX" secondItem="UYD-lp-l1Z" secondAttribute="centerX" id="QfS-fv-1G9"/>
+                            <constraint firstItem="U5v-88-jUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="SuU-OR-9Ht"/>
+                            <constraint firstItem="i7X-9y-fVW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="320" id="bWt-vD-4Xp"/>
+                            <constraint firstItem="U5v-88-jUO" firstAttribute="top" secondItem="UYD-lp-l1Z" secondAttribute="bottom" constant="7.5" id="zUS-Ex-ub2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cat" width="25" height="25"/>
+        <image name="Dog" width="25" height="25"/>
+        <image name="Miawouf" width="235" height="67"/>
+    </resources>
+</document>
