@@ -9,21 +9,28 @@ import UIKit
 
 class CatSucessViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    var cat: Pet!
+    @IBAction func dismissView(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
+    @IBOutlet weak var label: UILabel!
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setTextLabel()
     }
-    */
+
+    private func setTextLabel() {
+        if let name = cat.name {
+            label.text = """
+              😸 🎉 😸 🎉 😸
+            Wouf de bienvenue Ã  \(name) !
+
+            Vous avez bien été ajouté à notre base de donnÃ©e ! Nous vous enverrons un SMS dès que nous avons une àme soeur à vous proposer !
+            """
+        }
+    }
+    
 
 }
